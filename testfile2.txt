@@ -1,0 +1,18 @@
+int main() {
+    cls output2 = {( _ n, _ m) -> int in
+    	return n+m;
+    }
+    var cnt = output2(1,2);
+	printf("the num is %d\n", cnt);
+    cls output3 = {(int n, int m) -> int in
+    	return n-m;
+    }
+    cnt=output3(6,5);
+	printf("the num is %d\n", cnt);
+    cls output4 = {(int i, int j, int k) -> int in
+        return i*j*k;
+    }
+    cnt=output4(2,3,4);
+	printf("the num is %d\n", cnt);
+	return 0;
+}

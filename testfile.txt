@@ -1,0 +1,166 @@
+
+let normalConst1 = 10;
+let normalConst2 = 12, normalConst3 = 13, normalConst4 = 14;
+
+var normalVar1 = 21;
+var normalVar2 = 22, normalVar3 = 23;
+
+var cnt;
+
+output(int n) -> void
+begin  
+	cnt = cnt + 1;
+	printf("the num is %d\n", n);
+	return;
+end
+
+judgeEvenOdd(int n) -> void
+begin
+	if (n % 2 == 0) 
+	begin
+	cnt = cnt + 1;
+		printf("%d is even!\n", n);
+	end 
+	else
+	begin
+		cnt = cnt + 1;
+		printf("%d is odd!\n", n);
+	end
+	return ;
+end
+
+get2Max(int m, int n) -> void 
+begin
+	if (m > n) 
+	begin
+		cnt = cnt + 1;
+		printf("max of %d and %d is %d\n", m, n, m);
+	end 
+	else 
+	begin
+		if (m <= n) 
+		begin
+			cnt = cnt + 1;
+			printf("max of %d and %d is %d\n", m, n, n);
+		end
+	end
+	return ;
+end
+
+get2Min(int m, int n) -> int begin
+	int ans = m;
+	if (m > n) begin
+		printf("min of %d and %d is %d\n", m, n, n);
+		cnt = cnt + 1;
+		ans = n;
+	end else begin
+		if (m < n) begin
+			printf("min of %d and %d is %d\n", m, n, m);
+			cnt = cnt + 1;
+			ans = m;
+		end else begin
+			if (m == n) begin
+				printf("%d and %d are equals\n", m, n);
+				cnt = cnt + 1;
+				ans = n;
+			end
+		end
+	end
+	return ans;
+end
+
+start() -> void 
+begin
+	cnt = cnt + 1;
+	printf("19373341\n");
+	return ;
+end
+
+isPrime(int n) -> void 
+begin
+	int flag = 0;
+	int i = 3;
+	if (n % 2 == 0) begin
+		printf("No, %d is not a prime! It has a factor 2\n", n);
+		cnt = cnt + 1;
+		flag = 1;
+	end
+	if (!flag) begin
+		while (1) begin
+			if (n % i == 0) begin
+				printf("No, %d is not a prime! It has a factor %d\n", n, i);
+				cnt = cnt + 1;
+				flag = 1; 
+				break;
+			end else begin
+				i = i + 2;
+				continue;
+			end
+		end
+		if (flag == 0) begin
+			printf("Yes, %d is a prime!\n", n);
+			cnt = cnt + 1;
+		end
+	end
+	return ;
+end
+
+main() -> int 
+begin
+	while (1) 
+	begin
+		start();
+		if (cnt == 10) begin
+			break;
+		end
+		const int i = 13, j = 212;
+		const int ii = 21;
+		int k = 1, kk = 2;
+		int nnnnn = 22;
+		int nnn;
+		nnn = 123;
+		if (cnt == 10) begin
+			break;
+		end
+		int m;
+		m = getint();
+		int n;
+		n = getint();
+		int mm;
+		mm = getint();
+		output(j / i + 4 * j - i);
+		output(m);
+		output(n);
+		output(mm);
+		if (cnt == 10) begin
+			break;
+		end
+		judgeEvenOdd(m);
+		if (cnt >= 10) begin
+			break;
+		end
+		if (cnt == 10) begin
+			break;
+		end
+		judgeEvenOdd(n);
+		if (cnt == 10) begin
+			break;
+		end
+		get2Max(m, n);
+		if (cnt == 10) begin
+			break;
+		end
+		get2Min(m, n);
+		if (cnt == 10) begin
+			break;
+		end
+		if (cnt == 10) begin
+			break;
+		end
+		isPrime(mm);
+		if (cnt == 10) begin
+			break;
+		end
+	end
+	return 0;
+end
